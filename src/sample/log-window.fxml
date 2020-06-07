@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="478.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogWindow">
+   <children>
+      <ListView fx:id="logList" layoutX="14.0" layoutY="90.0" prefHeight="377.0" prefWidth="250.0" />
+      <Label layoutX="73.0" layoutY="6.0" text="User Logs">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="logins" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#getLogInLogs" text="LogIn" />
+      <Button fx:id="logouts" layoutX="207.0" layoutY="52.0" mnemonicParsing="false" onAction="#getLogOutLogs" text="LogOut" />
+   </children>
+</AnchorPane>

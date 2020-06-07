@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="680.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainWindow">
+   <children>
+      <Pane fx:id="optionPane" layoutX="13.0" layoutY="14.0" prefHeight="53.0" prefWidth="931.0">
+         <children>
+            <Label fx:id="userName" layoutX="14.0" layoutY="8.0" prefHeight="38.0" prefWidth="260.0" text="Name of User">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button fx:id="logBtn" layoutX="584.0" layoutY="14.0" mnemonicParsing="false" onAction="#openLogWindow" text="Logs" />
+            <Button fx:id="logOutBtn" layoutX="845.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+            <Button fx:id="options" layoutX="708.0" layoutY="14.0" mnemonicParsing="false" onAction="#showOptions" text="Options" />
+         </children></Pane>
+      <Pane fx:id="usersPane" layoutX="37.0" layoutY="96.0" prefHeight="430.0" prefWidth="260.0">
+         <children>
+            <ListView fx:id="userList" layoutX="30.0" layoutY="45.0" onMouseClicked="#getUser" prefHeight="360.0" prefWidth="200.0" />
+            <Label layoutX="30.0" prefHeight="19.0" prefWidth="200.0" text="Users">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="messagesPane" layoutX="336.0" layoutY="96.0" prefHeight="430.0" prefWidth="584.0">
+         <children>
+            <ListView fx:id="msgList" layoutX="104.0" layoutY="47.0" prefHeight="360.0" prefWidth="446.0" />
+            <Label layoutX="22.0" layoutY="4.0" prefHeight="25.0" prefWidth="122.0" text="Messages">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ListView fx:id="usrList" layoutX="22.0" layoutY="47.0" prefHeight="360.0" prefWidth="82.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="msgField" layoutX="358.0" layoutY="574.0" onKeyReleased="#getFieldMsg" prefHeight="25.0" prefWidth="528.0" />
+      <Button fx:id="sendBtn" layoutX="370.0" layoutY="611.0" mnemonicParsing="false" onAction="#sendMessage" text="Send" />
+      <Button fx:id="chooseUserBtn" layoutX="292.0" layoutY="282.0" mnemonicParsing="false" onAction="#getMessages" prefHeight="97.0" prefWidth="42.0" text="GO" />
+      <Label layoutX="366.0" layoutY="529.0" text="Sending to:" />
+      <Label fx:id="sendingTo" layoutX="435.0" layoutY="517.0" text="...">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

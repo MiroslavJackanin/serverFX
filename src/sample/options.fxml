@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="260.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Options">
+   <children>
+      <Label layoutX="6.0" layoutY="-19.0" text="Change password">
+         <font>
+            <Font size="76.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="227.0" layoutY="129.0" onKeyReleased="#setPass" />
+      <Button fx:id="changePswdBtn" layoutX="278.0" layoutY="177.0" mnemonicParsing="false" onAction="#changePswd" text="change" />
+      <Label fx:id="changeStatus" layoutX="290.0" layoutY="219.0" />
+   </children>
+</AnchorPane>
