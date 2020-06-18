@@ -82,6 +82,7 @@ public class MainWindow {
     public void setToken(String token){
         this.token = token;
     }
+
     public void setLogin(String login){
         this.login = login;
     }

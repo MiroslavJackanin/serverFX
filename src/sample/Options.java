@@ -20,9 +20,11 @@ public class Options {
     public void setPass(){
         pass = password.getText();
     }
+
     public void setOldPass(String oldPass){
         this.oldPass = oldPass;
     }
+
     public void setLogin(String login){
         this.login = login;
     }

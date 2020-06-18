@@ -74,12 +74,15 @@ public class SignUp {
     public void setFstname(){
         fstname = fname.getText();
     }
+
     public void setLstname(){
         lstname = lname.getText();
     }
+
     public void setUsrlogin(){
         usrlogin = login.getText();
     }
+
     public void setUsrpass(){
         usrpass = pass.getText();
     }

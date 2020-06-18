@@ -48,6 +48,7 @@ public class Controller {
     public void setLogin(){
         userLogin = fieldUserLogin.getText();
     }
+
     public void setPass(){
         userPass = fieldUserPass.getText();
     }
